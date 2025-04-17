@@ -1,17 +1,19 @@
 import {Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import {useEffect, useState} from "react";
-import {loadProjectData} from "./readProjectData";
+import {readProjectData} from "./readProjectData";
 import {useNavigate} from "react-router-dom";
 
 export const ProjectCard = ({project_index}) => {
-    const projects = loadProjectData()
+    const projects = readProjectData()
     const project = projects[project_index];
     const colRightSizes = project.cover !== "" ? {xs: 8, md: 8, xl: 8} : {xs: 12, md: 12, xl: 12};
 
     const navigate = useNavigate();
     const handleCardClick = () => {
         navigate(`/project/${project.key}`, {state: {project_index}});
+        window.scrollTo(0, 0);
     };
+
     return (
         <div className="proj-box"
              onClick={handleCardClick}
@@ -21,9 +23,9 @@ export const ProjectCard = ({project_index}) => {
                     {project.cover !== "" && (
                         <Col xs={4} md={4} xl={4}>
                             <img
-                                src={require(`../assets/img/${project.cover}`)}
+                                src={project.cover.endsWith('.gif') ? require(`../assets/img/${project.cover.split('.gif')[0]}.gif`) : require(`../assets/img/${project.cover}`)}
                                 alt={`${project.title} image`}
-                            /> {/* 这里的路径编写有点问题的，最好不要做修改 */}
+                            /> {/* 这里的路径编写有点奇怪，最好不要做修改 */}
                         </Col>)}
                     <Col {...colRightSizes}>
                         <h3>{project.title}</h3>
@@ -37,6 +39,14 @@ export const ProjectCard = ({project_index}) => {
                                 ))
                             )
                         })}
+                        <h4><br/></h4>
+                        {project.publication.link && project.publication.link.trim() !== "" ? (
+                            <a href={project.publication.link} target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()}>
+                                <h4>Publication: {project.publication.description}</h4>
+                            </a>
+                        ) : (
+                            <h4>Publication: {project.publication.description}</h4>
+                        )}
                     </Col>
                 </Row>
             </div>

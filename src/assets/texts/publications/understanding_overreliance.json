@@ -1,22 +1,19 @@
 {
-  "title": "CalibRead: Unobtrusive Eye Tracking Calibration from Natural Reading Behavior",
-  "duration": "May 2023 ‑ February 2024",
+  "title": "Understanding Overreliance on Conversational LLM based on Users’ Interaction Behaviors",
+  "duration": "September 2024 - April 2025",
   "author_list": [
     {"Chang Liu": "#1D67CD"},
-    {"Chun Yu*": "#000000"},
-    {"Xiangyang Wang": "#000000"},
-    {"Jianxiao Jiang":  "#000000"},
-    {"Tianao Yang":  "#000000"},
-    {"Bingda Tang": "#000000"},
-    {"Chen Liang": "#000000"},
-    {"Yuanchun Shi": "#000000"}
+    {"Qinyi Zhou": "#000000"},
+    {"Xinjie Shen": "#000000"},
+    {"Xingyu Bruce Liu":  "#000000"},
+    {"Sherry Tongshuang Wu": "#000000"},
+    {"Xiang 'Anthony' Chen": "#000000"}
   ],
   "full_text": [
-    {"image": "/assets/img/project-calibread-image_1.jpg"},
-    {"paragraph": "In this paper, we present a novel, unobtrusive calibration method that leverages the association between eye-movement and text to calibrate eye-tracking devices during natural reading. The calibration process involves an iterative sequence of 3 steps: (1) matching the points of eye-tracking data with the text grids and boundary grids, (2) computing the weight for each point pair, and (3) optimizing the calibration parameters that best align point pairs through gradient descent. During this process, we assume that, from a holistic perspective, the gaze will cover the text area, effectively filling it after sufficient reading. Meanwhile, on a granular level, the gaze duration is influenced by the semantic and positional features of the text. Therefore, factors such as the presence of empty space, the positional features of tokens, and the depth of constituency parsing play important roles in calibration. Our method achieves accuracy error comparable to traditional 7-point mehtod after naturally reading 3 texts, which takes about 51.75 seconds. Moreover, we analyse the impact of different holistic and granular features on the calibration results.\n\n"},
-    {"image": "/assets/img/project-calibread-image_2.jpg", "description": "Overlay of all eye movement traces shows distinguishable rows, indicating eye movement during reading is strongly correlated with text in rows"},
-    {"image": "/assets/img/project-calibread-image_3.jpg", "description": "Calibration Workflow. (a) Point Matching: We match each gaze point with its closet text grid center and boundary grid center. (b) Computing Weights: For each point pair, we calculate its weight. For text grids, the weight is computed using gaze density and gaze duration prediction. For text grids of punctuation and boundary grids, we set their weight to contants.(c) Gradient Descent: We compute the optimal affine matrix by minimizing the weighted distance between point pairs. After transforming the gaze points with affine matrix, we return to point matching to initiate the next iteration."},
-    {"publication": "IMWUT 2024", "link": "https://dl.acm.org/doi/10.1145/3699737"}
+    {"paragraph": "Overreliance on Conversational LLM (e.g., ChatGPT) can degrade human-AI collaboration. In contrast to prior work that studied overreliance by measuring task outcome, we investigate how users’ interaction behaviors on a Conversational LLM interface (e.g., mouse\nand keyboard activities) correlate with their overreliance on AI. To achieve this, we collected a dataset of interaction behaviors logged from 77 participants interacting with a Conversational LLM manipulated to generate misinformation. Participants performed three tasks that required them to verify Conversational LLM responses using different information sources and decide whether and how to use the responses to complete the tasks. To analyze this data, we employ a transformer-based autoencoder to extract embeddings corresponding to different interaction behaviors. Through clustering analysis of these embeddings, We identified five distinctive behavior patterns correlated with overreliance. Our findings provide insights for better understanding the overreliance.\n\n"},
+    {"image": "project-understanding_overreliance_image_1.png", "description": "Image 1: The AutoEncoder Structure We Used for Analysis. We first segmented the whole log into action sequence of different window length. Next, we transferred the action sequences into vectors. We use an autoencoder to reconstruct the vectors, and use the latent vector of each action sequence for clustering.\n\n"},
+    {"image": "project-understanding_overreliance_image_2.png", "description": "Image 2: Visualization of various behavior clusters, with three columns respectively denoting Behavior Pattern, Task, and Visualization of Behavior Sequence. Sub-figures (a) to (e) correspond to distinct behavior patterns: (a) Frequency of Referring LLM Outputs: Shows how often users refer to LLM outputs during quiz solving task. (b) Continuous Modifications Following Each LLM Output: Depicts users’ repeated edits (keypress/delete) on the LLM page after idle (considering) on the Task page. More common in high-overreliance users. (c) Focused Task Comprehension at the Start: Highlights users’ concentrated reading (mousewheel/idle) on the Task page at the task’s beginning, observed in article summarization. (d) Coarse- vs. Fine-Grained Locating & Editing: In tasks like trip planning, high-overreliance users use rough locating (lengthy copy/paste); low-overreliance users engage in precise editing (repeated mouse movement, keypress, click after scrolling). (e) Frequency of Copying-Pasting: In trip planning, high-reliance users frequently copy/paste unedited; low-overreliance users cautiously edit (keypress/delete).\n\n"}
   ],
-  "cover": ""
+  "publication": {"description": "On Submission to UIST 2025", "link": ""},
+  "cover": "project-understanding_overreliance_cover.png"
 }

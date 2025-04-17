@@ -6,6 +6,7 @@ import {Publications} from "./Publications";
 import {Contact} from "./Contact";
 import {Footer} from "./Footer";
 import {NavBar} from "./NavBar";
+import {BackTop} from "./BackTop";
 
 export const Home = () => {
     return (
@@ -14,10 +15,11 @@ export const Home = () => {
             <Banner />
             {/*<Skills />*/}
             <Experience />
-            <Projects />
             <Publications />
-            <Contact />
-            <Footer />
+            {/*<Projects />*/}
+            {/*<Contact />*/}
+            {/*<Footer />*/}
+            <BackTop />
         </div>
     );
 };

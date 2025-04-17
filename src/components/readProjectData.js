@@ -1,10 +1,11 @@
-import projectOrder from "../assets/texts/projectOrder.json";
+import projectOrder from "../assets/texts/publicationsOrder.json";
 
-export const loadProjectData = () => {
-    const projectOrder = require('../assets/texts/projectOrder.json');
+export const readProjectData = (suffix) => {
+    const projectOrder = require(`../assets/texts/publicationsOrder.json`);
     // console.log(1)
     // console.log(projectOrder)
-    const projectFiles = require.context('../assets/texts/publications', false, /\.json$/);
+
+    const projectFiles = require.context(`../assets/texts/publications`, false, /\.json$/);
     // console.log(2)
     // console.log(projectFiles.keys())
     const projects = projectFiles.keys()

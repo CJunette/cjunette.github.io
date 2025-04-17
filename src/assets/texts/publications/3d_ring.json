@@ -1,22 +1,18 @@
 {
-  "title": "CalibRead: Unobtrusive Eye Tracking Calibration from Natural Reading Behavior",
-  "duration": "May 2023 ‑ February 2024",
+  "title": "3DRing: Enabling Low-Cost 3D Hand Position Tracking by Fusing Optical and Inertial Sensing\n",
+  "duration": "May 2024 ‑ September 2024",
   "author_list": [
-    {"Chang Liu": "#1D67CD"},
+    {"Zhuojun Li": "#000000"},
     {"Chun Yu*": "#000000"},
-    {"Xiangyang Wang": "#000000"},
-    {"Jianxiao Jiang":  "#000000"},
-    {"Tianao Yang":  "#000000"},
-    {"Bingda Tang": "#000000"},
-    {"Chen Liang": "#000000"},
+    {"Chang Liu": "#1D67CD"},
+    {"Lubin Wang": "#000000"},
+    {"Mingyuan Du":  "#000000"},
+    {"Weinan Shi":  "#000000"},
     {"Yuanchun Shi": "#000000"}
   ],
   "full_text": [
-    {"image": "/assets/img/project-calibread-image_1.jpg"},
-    {"paragraph": "In this paper, we present a novel, unobtrusive calibration method that leverages the association between eye-movement and text to calibrate eye-tracking devices during natural reading. The calibration process involves an iterative sequence of 3 steps: (1) matching the points of eye-tracking data with the text grids and boundary grids, (2) computing the weight for each point pair, and (3) optimizing the calibration parameters that best align point pairs through gradient descent. During this process, we assume that, from a holistic perspective, the gaze will cover the text area, effectively filling it after sufficient reading. Meanwhile, on a granular level, the gaze duration is influenced by the semantic and positional features of the text. Therefore, factors such as the presence of empty space, the positional features of tokens, and the depth of constituency parsing play important roles in calibration. Our method achieves accuracy error comparable to traditional 7-point mehtod after naturally reading 3 texts, which takes about 51.75 seconds. Moreover, we analyse the impact of different holistic and granular features on the calibration results.\n\n"},
-    {"image": "/assets/img/project-calibread-image_2.jpg", "description": "Overlay of all eye movement traces shows distinguishable rows, indicating eye movement during reading is strongly correlated with text in rows"},
-    {"image": "/assets/img/project-calibread-image_3.jpg", "description": "Calibration Workflow. (a) Point Matching: We match each gaze point with its closet text grid center and boundary grid center. (b) Computing Weights: For each point pair, we calculate its weight. For text grids, the weight is computed using gaze density and gaze duration prediction. For text grids of punctuation and boundary grids, we set their weight to contants.(c) Gradient Descent: We compute the optimal affine matrix by minimizing the weighted distance between point pairs. After transforming the gaze points with affine matrix, we return to point matching to initiate the next iteration."},
-    {"publication": "IMWUT 2024", "link": "https://dl.acm.org/doi/10.1145/3699737"}
+    {"paragraph": "Human hand tracking is a fundamental task in AR/VR, enabling natural 3D interactions. Current hand tracking systems primarily rely on high-framerate (HFR, e.g. 60 FPS) optical sensors to capture hand positions, which results in high computational costs and limits their applicability in end devices. To address this challenge, we propose 3DRing, a 3D hand position tracking method that requires only low-framerate (LFR, i.e. <10 FPS) optical data and a single IMU ring, achieving high hand tracking accuracy and interaction efficiency. Our method consists of two stages: (1) a Deep Extended Kalman Filter (DEKF) prediction stage, and (2) a Reinforcement Learning (RL) calibration stage. In the first stage, we use an RNN-based velocity prediction model and an EKF model to jointly predict high-framerate hand positions from a single LFR optical measurement. In the second stage, the RL model adaptively selects minimal optical keyframes for calibration, further reducing the average optical framerate. Evaluations demonstrate that both the DEKF and RL modules significantly enhance tracking performance. Using only 6.61 FPS (9.9%) optical data, 3DRing achieves an average real-time tracking error of 1.75+-0.18cm and an interaction speed of 86.0% in a 3D target selection task, compared to the 67 FPS built-in hand tracking system of the Meta Quest Pro. This shows the strong potential of our method to reduce the reliance on optical data in mobile hand tracking devices, making hand tracking technology more accessible to end users.\n\n"}
   ],
+  "publication": {"description": "On Submission to UIST 2025", "link": ""},
   "cover": ""
 }

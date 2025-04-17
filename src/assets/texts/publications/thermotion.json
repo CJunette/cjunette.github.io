@@ -1,22 +1,20 @@
 {
-  "title": "CalibRead: Unobtrusive Eye Tracking Calibration from Natural Reading Behavior",
-  "duration": "May 2023 ‑ February 2024",
+  "title": "Thermotion: Design and Fabrication of Thermofluidic Composites for Animation Effects on Object Surfaces",
+  "duration": "May 2022 ‑ February 2023",
   "author_list": [
+    {"Tianyu Yu": "#000000"},
+    {"Weiye Xu": "#000000"},
+    {"Haiqing Xu": "#000000"},
+    {"Guanhong Liu": "#000000"},
     {"Chang Liu": "#1D67CD"},
-    {"Chun Yu*": "#000000"},
-    {"Xiangyang Wang": "#000000"},
-    {"Jianxiao Jiang":  "#000000"},
-    {"Tianao Yang":  "#000000"},
-    {"Bingda Tang": "#000000"},
-    {"Chen Liang": "#000000"},
-    {"Yuanchun Shi": "#000000"}
+    {"Guanyun Wang": "#000000"},
+    {"Haipeng Mi": "#000000"}
   ],
   "full_text": [
-    {"image": "/assets/img/project-calibread-image_1.jpg"},
-    {"paragraph": "In this paper, we present a novel, unobtrusive calibration method that leverages the association between eye-movement and text to calibrate eye-tracking devices during natural reading. The calibration process involves an iterative sequence of 3 steps: (1) matching the points of eye-tracking data with the text grids and boundary grids, (2) computing the weight for each point pair, and (3) optimizing the calibration parameters that best align point pairs through gradient descent. During this process, we assume that, from a holistic perspective, the gaze will cover the text area, effectively filling it after sufficient reading. Meanwhile, on a granular level, the gaze duration is influenced by the semantic and positional features of the text. Therefore, factors such as the presence of empty space, the positional features of tokens, and the depth of constituency parsing play important roles in calibration. Our method achieves accuracy error comparable to traditional 7-point mehtod after naturally reading 3 texts, which takes about 51.75 seconds. Moreover, we analyse the impact of different holistic and granular features on the calibration results.\n\n"},
-    {"image": "/assets/img/project-calibread-image_2.jpg", "description": "Overlay of all eye movement traces shows distinguishable rows, indicating eye movement during reading is strongly correlated with text in rows"},
-    {"image": "/assets/img/project-calibread-image_3.jpg", "description": "Calibration Workflow. (a) Point Matching: We match each gaze point with its closet text grid center and boundary grid center. (b) Computing Weights: For each point pair, we calculate its weight. For text grids, the weight is computed using gaze density and gaze duration prediction. For text grids of punctuation and boundary grids, we set their weight to contants.(c) Gradient Descent: We compute the optimal affine matrix by minimizing the weighted distance between point pairs. After transforming the gaze points with affine matrix, we return to point matching to initiate the next iteration."},
-    {"publication": "IMWUT 2024", "link": "https://dl.acm.org/doi/10.1145/3699737"}
+    {"paragraph": "We introduce Thermotion, a novel method using thermofluidic composites to design and display thermochromic animation effects on object surfaces. With fluidic channels embedded under the object surfaces, the composites utilize thermofluidic flows to dynamically control the surface temperature as an actuator for thermochromic paints, which enables researchers and designers for the first time to create animations not only on two and three-dimensional surfaces but also on the surface made of a few flexible everyday materials.\n\nWe report the design space with six animation primitives and two modification effects, and we demonstrate the design and fabrication workflow with a customized software platform for design and simulation. A range of applications is shown leveraging the objects’ dynamic displays both visually and thermally, including dynamic artifacts, teaching aids, and ambient displays. We envision an opportunity to extend thermofluidic composites to other heat-related practices for further dynamic and programmable interactions with temperature.\n\nMy main tasks in this study include proposal of design space, experimental design and execution, paper writing, and video production.\n\n"},
+    {"video": "https://www.youtube.com/embed/IqUN172bXmI"},
+    {"redirect": "For more details, please check ", "link": "https://yutianyu.design/2022/12/25/thermotion/"}
   ],
-  "cover": ""
+  "publication": {"description": "CHI 2023", "link": "https://dl.acm.org/doi/10.1145/3544548.3580743"},
+  "cover": "project-thermotion_cover.gif"
 }

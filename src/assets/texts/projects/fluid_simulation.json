@@ -1,0 +1,14 @@
+{
+  "title": "Course Work | Fluid Simulation",
+  "duration": "2021",
+  "author_list": [
+  ],
+  "full_text": [
+    {"paragraph": "These are 2 a very simple fluid simulations using NS equation, one from Euler view, the other from Lagrange view. The program is written using taichi.\n\n"},
+    {"video": "project-fluid_simulation_video_1.mp4", "description": "Euler View"},
+    {"video": "project-fluid_simulation_video_2.mp4", "description": "Lagrange View"}
+  ],
+  "publication": {"description": "", "link": ""},
+  "cover": "project-fluid_simulation_cover.png"
+}
+

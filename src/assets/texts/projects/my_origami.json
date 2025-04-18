@@ -1,0 +1,22 @@
+{
+  "title": "Course Work | My Origami",
+  "duration": "2021",
+  "author_list": [
+  ],
+  "full_text": [
+    {"paragraph": "Origami can be difficult even with the instruction diagram. Sometime we need video to better illustrate the process of origami. We tried to build a origami teaching application by overlapping the  animation of how the origami should be fold to the paper using cameras. We use SIFT to detect different stages and overlap the model with animation on it. User need to take a short video of the current origami and we will give out the video with origami process rendered on it. The current system, due to the direct use of feature point matching algorithm, results in some jitter in the final image. We plan to further improve this project using Apple's ARKit.\n\n"},
+    {"paragraph": "This is a group project. I finished all the algorithm including applying SIFT and rendering the model using OpenGL. Also I finished the 3d modeling of the origami in the video.\n\n"},
+    {"video": "project-my_origami_video_1.mp4", "description": "This is a short video demostrating the system."},
+    {"paragraph": "The followings are tutorial videos on how to make an origami tropical fish using this system.\n\n"},
+    {"video": "project-my_origami_video_2.mp4", "description": "Step 1"},
+    {"video": "project-my_origami_video_3.mp4", "description": "Step 2"},
+    {"video": "project-my_origami_video_4.mp4", "description": "Step 3"},
+    {"video": "project-my_origami_video_5.mp4", "description": "Step 4"},
+    {"video": "project-my_origami_video_6.mp4", "description": "Step 5"},
+    {"video": "project-my_origami_video_7.mp4", "description": "Step 6"},
+    {"video": "project-my_origami_video_8.mp4", "description": "Step 7"}
+  ],
+  "publication": {"description": "", "link": ""},
+  "cover": "project-my_origami_cover.jpg"
+}
+

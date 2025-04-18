@@ -7,6 +7,8 @@ import icon_cv from "../assets/img/icon-cv.svg"
 import icon_email from "../assets/img/icon-email.svg"
 import icon_google_scholar from "../assets/img/icon-google-scholar.svg"
 import text_json from "../assets/texts/links/links.json"
+import icon_about_me from "../assets/img/icon-about-me.svg"
+import {useNavigate} from "react-router-dom";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -56,6 +58,12 @@ export const Banner = () => {
         // 假设 JSON 文件中有一个字段叫 "textContent"
         setTextContent(text_json);
     }, []);
+
+    const navigate = useNavigate();
+    const handleIconClick = (page_name) => {
+        navigate(`/${page_name}`, {state: {}});
+        window.scrollTo(0, 0);
+    };
 
     return (
         <section className="banner" id="home">
@@ -107,6 +115,9 @@ export const Banner = () => {
                                     <img src={icon_twitter} alt="Twitter"/>
                                 </a>
 
+                                <a onClick={() => handleIconClick("aboutme")} target="_blank" rel="noopener noreferrer" className="icon">
+                                    <img src={icon_about_me} alt="About Me"/>
+                                </a>
                             </div>
                         </div>
                     </Col>

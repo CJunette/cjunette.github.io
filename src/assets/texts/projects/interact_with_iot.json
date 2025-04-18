@@ -1,0 +1,16 @@
+{
+  "title": "Course Work | Interact with IoT Devices with Head Direction and Voice Control",
+  "duration": "2021",
+  "author_list": [
+  ],
+  "full_text": [
+    {"paragraph": "We create a VR environment in which we can interact with the iot devices using voice control only or using head direction and voice control at the same time.\n\n"},
+    {"paragraph": "Head direction is often considered as a way to show one's interest, especially someone is look at something for a certain amount of time. So we track along the user's head direction and pick the first iot device as the \"target candidate\" . We use a progress circle to avoid unintentional activation. When a device is \"selected\", the use can interact with it by speaking out the command directly.\n\n"},
+    {"paragraph": "For those out of the sight, the user can speak the name + command to interact with them.\n\n"},
+    {"paragraph": "This is a group project. I am in charge of the unity development, from writing the scripts to deploying the whole project to vr.\n\n"},
+    {"video": "project-interact_with_iot_video_1.mp4", "description": "The video is a demonstration video showing how users can control a specific IoT device using voice commands when facing the device."}
+  ],
+  "publication": {"description": "", "link": ""},
+  "cover": "project-interact_with_iot_cover.png"
+}
+

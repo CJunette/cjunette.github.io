@@ -1,0 +1,19 @@
+{
+  "title": "Research Project | Remote Control of Smartphone Mirroring",
+  "duration": "2022",
+  "author_list": [
+    {"Chang Liu": "#1D67CD"},
+    {"Chun Yu*": "#000000"},
+    {"Yuanchun Shi": "#000000"}
+  ],
+  "full_text": [
+    {"paragraph": "In the in-car infotainment system, users face the following challenges when mirroring their smartphones onto a remote screen:\n\n"},
+    {"paragraph": "1. Difficulty in Interacting with Small Targets: Interacting with small targets is challenging, requiring users to frequently switch their gaze between the remote screen and the smartphone, disrupting the interaction experience and potentially causing motion sickness.\n\n"},
+    {"paragraph": "2. Conflict in Interaction Methods: To facilitate selection of small targets, alternative cursor-based interaction methods such as touchpads are introduced. However, these methods conflict with the native interaction of smartphones, creating discrepancies in the required swipe gestures for cursor movement.\n\n"},
+    {"paragraph": "We conducted user researches and investigated users' interaction choices when faced with screens of different sizes and positions, employing two interaction methods during smartphone mirroring: the smartphone's native interaction and a touchpad-based interaction. Our findings indicate that users tend to prefer touchpad-based interaction when the control appears in the center of the screen and is small. In contrast, users prefer the native smartphone interaction when the control is large or positioned around the screen periphery.\n\n"},
+    {"paragraph": "Additionally, we proposed an interaction method for mirroring smartphones to remote screens, allowing users to perform operations using similar gestures for both interaction methods. This approach leverages the user's current context and interaction history to predict their intended interaction. It enables users to maintain continuous focus on the remote screen and achieves a classification accuracy of 95% in practical usage.\n\n"}
+  ],
+  "publication": {"description": "", "link": ""},
+  "cover": ""
+}
+

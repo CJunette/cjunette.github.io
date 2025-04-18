@@ -6,7 +6,6 @@ import {Banner} from "./components/Banner";
 import {Skills} from "./components/Skills";
 import {Experience} from "./components/Experience";
 import {Projects} from "./components/Projects";
-import {Publications} from "./components/Publications";
 import {Contact} from "./components/Contact";
 import {Footer} from "./components/Footer";
 import {Home} from "./components/Home";
@@ -14,6 +13,7 @@ import {ProjectPage} from "./components/ProjectPage";
 import {
     BrowserRouter as Router, Routes, Route
 } from "react-router-dom";
+import {AboutMePage} from "./assets/custom_pages/AboutMe/AboutMePage";
 
 
 function App() {
@@ -30,7 +30,9 @@ function App() {
                 {/*/!*<Footer />*!/*/}
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/project/:key" element={<ProjectPage/>}/>
+                    <Route path="/projects/:key" element={<ProjectPage/>}/>
+                    <Route path="/publications/:key" element={<ProjectPage/>}/>
+                    <Route path="/aboutme" element={<AboutMePage/>}/>
                 </Routes>
             {/*</div>*/}
         </Router>

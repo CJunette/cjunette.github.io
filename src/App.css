@@ -65,6 +65,13 @@
     --proj-h1-font-size: 25pt;
     --proj-h3-font-size: 15pt;
     --proj-h5-font-size: 12pt;
+
+    --aboutme-p-font-size: 12pt;
+    --aboutme-h1-font-size: 25pt;
+    --aboutme-h2-font-size: 15pt;
+    --aboutme-span-font-size: 12pt;
+
+    --href-color: #1D67CD;
 }
 
 html {
@@ -111,7 +118,9 @@ p, a, li, button, ul {
 }
 
 a {
-    color: #1D67CD !important;
+    color: var(--href-color) !important;
+    cursor: pointer;
+    text-decoration: none !important;
 }
 
 a:hover {
@@ -125,14 +134,32 @@ img {
 
 .iframe-container iframe {
     width: 80%;
+    height: auto; /* 自动调整高度以保持原始比例 */
     aspect-ratio: 16 / 9; /* 设置宽高比为 16:9 */
-    margin: 50pt auto; /* 水平居中 */
+    margin: 0 auto; /* 水平居中 */
     display: block;
     border: none;
 }
 
 .iframe-container {
+    margin: 15pt auto; /* 水平居中 */
+}
 
+.video-container video{
+    width: 80%;
+    height: auto;
+    margin: 0 auto; /* 水平居中 */
+    display: block;
+    border: none;
+}
+
+.video-container {
+    margin: 15pt auto; /* 水平居中 */
+
+}
+
+.img-container {
+    padding: 15pt 0 ;
 }
 
 button {
@@ -184,12 +211,48 @@ nav.navbar {
     width: 100%;
     top: 0;
     z-index: 9999;
-    transition: 0.32s ease-in-out;
+    transition: 0.3s ease-in-out;
+    background-color: var(--bg-color);
 }
 
 nav.navbar.scrolled {
     padding: 0 0;
     background-color: var(--bg-color);
+    opacity: 0.95;
+}
+
+.back-top-nav-bar {
+    /*opacity: 0;*/
+    height: 0 !important;
+    padding: 0 !important;
+}
+
+.scrolled-back-top, .not-scrolled-back-top{
+    padding: 0 0;
+    background-color: #FDFDFD !important;
+    opacity: 0.8 !important;;
+    border: 1pt solid rgba(150, 150, 150, 0.6);
+    cursor: pointer;
+    width: 35pt !important;
+    height: 35pt !important;;
+    position: fixed;
+    z-index: 9999;
+    left: calc(min(90vw, (50vw + var(--container_width) / 2) * 0.985)) !important; /*vw表示1%页面宽度*/
+    top: 90% !important;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-scrolled-back-top {
+    opacity: 0 !important;
+}
+
+.back-top-img {
+    max-width: 80%; /* 根据需要调整图片大小 */
+    height: auto;
+    margin: 0 auto; /* 确保图片在父容器中居中 */
 }
 
 nav.navbar a.navbar-brand {
@@ -239,7 +302,7 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1pt solid rgba(255, 255, 255, 0.5);
 }
 
 .social-icon a::before {
@@ -331,7 +394,7 @@ nav.navbar .navbar-toggler-icon:before {
     width: 24px;
     position: absolute;
     height: 2px;
-    background-color: #fff;
+    background-color: #CCC;
     top: 0;
     left: 0;
     content: '';
@@ -446,7 +509,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .icon-div {
-    width: 50%;
+    width: 80%;
     height: auto;
     display: flex; /* 使用 flex 布局 */
     justify-content: space-between; /* 对象水平均匀分布 */
@@ -456,10 +519,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     /*margin-right: auto !important;;*/
 }
 
+.banner .icon-div img {
+    height: 20pt;
+    width: auto;
+    margin-left: auto; /* 让 div 靠右对齐 */
+}
+
 .banner .icon {
     width: 20%;
     height: auto;
     margin-top: 5pt;
+    cursor: pointer;
 }
 
 @keyframes updown {
@@ -642,8 +712,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border: 1.5pt solid #DDDDDD; /* 添加外框 */
     /*box-sizing: border-box; !* 确保 border 不会增加总宽度 *!*/
     margin-bottom: 20pt;
-    margin-left: 10pt;
-    margin-right: 10pt;
+    margin-left: 0;
+    margin-right: 0;
+    /*max-width: var(--container_width) !important;*/
 }
 
 .proj-box-content {
@@ -655,10 +726,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 0 15pt;
 }
 
+.proj-box-container {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .proj-box-content h3 {
     text-align: left;
     margin-right: auto;
     font-size: var(--h3-pub-font-size) !important;
+}
+
+.proj-box-content a {
+    text-decoration: none !important;
+    color: #000000 !important;
+}
+
+.proj-box-content a#publication {
+    color: var(--href-color) !important;
 }
 
 .proj-box-content img {
@@ -817,11 +904,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background: var(--bg-color);
 }
 
-.projectPage .project-details-container {
+.project-details-container {
     padding-top: var(--navbar-margin);
 }
 
-.projectPage .project-details-box{
+.project-details-box{
     border: 1.5pt solid #DDDDDD; /* 添加外框 */
     padding: 20pt;
 }
@@ -855,11 +942,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .projectDetails h5 {
     padding: 10pt 10pt ;
     font-size: var(--proj-h5-font-size) !important;
+    text-align: center; /* 文字居中对齐 */
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
 }
 
 .projectDetails img {
-    padding: 10pt 0pt ;
+    padding: 0 0 ;
     font-size: var(--proj-h5-font-size) !important;
+}
+
+/************ AboutMe Css ************/
+
+.aboutMeDetails h1 {
+    font-size: var(--aboutme-h1-font-size) !important;
+    margin-bottom: 10pt;
+    font-weight: 600;
+}
+
+.aboutMeDetails h2 {
+    font-size: var(--aboutme-h2-font-size) !important;
+    margin-bottom: 10pt;
+    font-weight: 600;
+}
+
+.aboutMeDetails p {
+    font-size: var(--aboutme-p-font-size) !important;
+    margin-bottom: 5pt;
+    line-height: 15pt;
+    text-indent: 1.5em;
+    margin-left: 25pt;
+    margin-right: 25pt;
+}
+
+.aboutMeDetails span {
+    font-size: var(--aboutme-span-font-size) !important;
+    margin-bottom: 5pt;
+    line-height: 15pt;
+}
+
+.aboutMeDetails li {
+    font-size: var(--aboutme-span-font-size) !important;
+    margin-bottom: 5pt;
+    line-height: 15pt;
+}
+
+.aboutMeDetails a {
+    text-decoration: none !important;
 }
 
 /************ Footer Css ************/
@@ -955,7 +1085,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     color: #000000
 }
 .backtop:hover {
-    color: #1D67CD
+    color: var(--href-color)
 }
 
 .backtop h2{

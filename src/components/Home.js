@@ -2,11 +2,13 @@ import {Banner} from "./Banner";
 import {Skills} from "./Skills";
 import {Experience} from "./Experience";
 import {Projects} from "./Projects";
-import {Publications} from "./Publications";
 import {Contact} from "./Contact";
 import {Footer} from "./Footer";
 import {NavBar} from "./NavBar";
-import {BackTop} from "./BackTop";
+import {BackText} from "./BackText";
+import {BackToTop} from "./BackToTop";
+import {useEffect} from "react";
+import {useNavigate} from "react-router-dom";
 
 export const Home = () => {
     return (
@@ -15,11 +17,12 @@ export const Home = () => {
             <Banner />
             {/*<Skills />*/}
             <Experience />
-            <Publications />
-            {/*<Projects />*/}
+            <Projects suffix="publications"/>
+            <Projects suffix="projects"/>
             {/*<Contact />*/}
             {/*<Footer />*/}
-            <BackTop />
+            {/*<BackText text="BackTop"/>*/}
+            <BackToTop />
         </div>
     );
 };

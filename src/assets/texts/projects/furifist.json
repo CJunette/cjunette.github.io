@@ -1,0 +1,16 @@
+{
+  "title": "Course Work | FuriFist",
+  "duration": "2022",
+  "author_list": [
+  ],
+  "full_text": [
+    {"paragraph": "This is an interactive installation art. User can hit the red earthbag to smash the wall made of annoying words. When the wall is destroyed, a big red \"NO\" made of those fragments will show up. This work tries to convey the idea that we live in a world of unreasonable requests to which we should say no. Waving your fists when needed!\n\n"},
+    {"paragraph": "This is a group project. I'm in charge of the unity development. I received the data from other's program when the earthbag is hit and change that into random hit on the text wall. The text wall is pre-shattered and keep static until a hit occurs.\n\n"},
+    {"iframe": "https://www.youtube.com/embed/QfSP7SpGrbs?si=IUqkQA45Vb9Kgf5o", "description": "A short video of the story."},
+    {"video": "project-furifist_video_1.mp4", "description": "The following is a demonstration of the interactive process of the device. The front camera of the laptop captures the movement of the red device. When the movement speed exceeds the threshold, destruction occurs at any position on the 'text wall' based on the speed magnitude."},
+    {"image": "project-furifist_image_1.png", "description": "When the textual wall is completely destroyed, the fragments of destruction will form a 'NO'.\n\n"}
+  ],
+  "publication": {"description": "", "link": ""},
+  "cover": "project-furifist_cover.jpg"
+}
+

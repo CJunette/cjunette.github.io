@@ -1,0 +1,14 @@
+{
+  "title": "Course Work | BasketBot",
+  "duration": "2021",
+  "author_list": [
+  ],
+  "full_text": [
+    {"paragraph": "This is a course work for Principles and Algorithms of Computer Animation.\n\n"},
+    {"paragraph": "I wrote a robot arm with many joints that consistently reach for the ball, dribble and shoot.\n\n"},
+    {"video": "project-basketbot_video_1.mp4"}
+  ],
+  "publication": {"description": "", "link": ""},
+  "cover": "project-basketbot_cover.jpg"
+}
+

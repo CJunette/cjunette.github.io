@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.a54726f9.css",
+    "main.css": "./static/css/main.949b2752.css",
     "main.js": "./static/js/main.2500fccb.js",
     "static/js/453.298f5782.chunk.js": "./static/js/453.298f5782.chunk.js",
     "static/media/project-interact_with_iot_video_1.mp4": "./static/media/project-interact_with_iot_video_1.18f028140439cc328c17.mp4",
     "static/media/header-img.jpg": "./static/media/header-img.39bc35cfa809d2844a46.jpg",
     "static/media/project-furifist_video_1.mp4": "./static/media/project-furifist_video_1.cc3bc62cd228d11bd029.mp4",
+    "static/media/GlowSansSC-Compressed-Regular.otf": "./static/media/GlowSansSC-Compressed-Regular.95f4aae7f06030593105.otf",
     "static/media/project-fluid_simulation_video_2.mp4": "./static/media/project-fluid_simulation_video_2.ae6ff1e47832bfbc16e2.mp4",
     "static/media/project-basketbot_video_1.mp4": "./static/media/project-basketbot_video_1.cca7c262262f46785f77.mp4",
     "static/media/project-thermotion_cover.gif": "./static/media/project-thermotion_cover.2f013defd36362bfc37a.gif",
     "static/media/project-my_origami_video_1.mp4": "./static/media/project-my_origami_video_1.e14827c1086d9b19de9b.mp4",
     "static/media/project-calibread_image_1.jpg": "./static/media/project-calibread_image_1.abf480ec2b86b568e16a.jpg",
     "static/media/project-my_origami_video_8.mp4": "./static/media/project-my_origami_video_8.89981fd25db25f0de449.mp4",
+    "static/media/SmileySans-Oblique.ttf": "./static/media/SmileySans-Oblique.6da0ce4063524f115c25.ttf",
     "static/media/project-my_origami_video_6.mp4": "./static/media/project-my_origami_video_6.54d6409c49f30f90cf78.mp4",
     "static/media/project-fluid_simulation_video_1.mp4": "./static/media/project-fluid_simulation_video_1.03561bef91218b5788d7.mp4",
     "static/media/project-my_origami_video_3.mp4": "./static/media/project-my_origami_video_3.63ef8f08a6456668f807.mp4",
@@ -70,12 +72,12 @@
     "static/media/arrow2.svg": "./static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "./static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.a54726f9.css.map": "./static/css/main.a54726f9.css.map",
+    "main.949b2752.css.map": "./static/css/main.949b2752.css.map",
     "main.2500fccb.js.map": "./static/js/main.2500fccb.js.map",
     "453.298f5782.chunk.js.map": "./static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a54726f9.css",
+    "static/css/main.949b2752.css",
     "static/js/main.2500fccb.js"
   ]
 }

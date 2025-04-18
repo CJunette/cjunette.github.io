@@ -41,6 +41,17 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: SmileySans;
+    src: url('./assets/font/SmileySans-Oblique.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: GlowSansSC;
+    src: url('./assets/font/GlowSansSC-Compressed-Regular.otf');
+    font-weight: 400;
+}
 
 /************ Default Css ************/
 * {
@@ -85,7 +96,7 @@ body {
     position: relative;
     background-color: var(--bg-color) !important;
     color: #000;
-    font-family: 'Futura', 'Simsun', sans-serif !important;
+    font-family: 'Futura', 'GlowSansSC', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -264,7 +275,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     color: #000 !important;
     letter-spacing: 0.8pt;
     padding: 0 0 0 50pt;
-    font-size: 15pt;
+    font-size: 15pt  !important;
     opacity: 0.75;
 }
 
@@ -273,7 +284,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     color: #000 !important;
     letter-spacing: 0.8pt;
     padding: 5pt;
-    font-size: 25pt;
+    font-size: 25pt !important;
     opacity: 0.75;
 }
 

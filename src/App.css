@@ -53,6 +53,12 @@
     font-weight: 400;
 }
 
+@font-face {
+    font-family: GlowSansSCLight;
+    src: url('./assets/font/GlowSansSC-Compressed-Light.otf');
+    font-weight: 400;
+}
+
 /************ Default Css ************/
 * {
     margin: 0;
@@ -475,7 +481,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     letter-spacing: 0.8pt;
     line-height: 1.5em;
     width: 96%;
-    font-family: 'FuturaLight', 'GlowSansSC';
+    font-family: 'FuturaLight', 'GlowSansSCLight';
 }
 
 .banner button {

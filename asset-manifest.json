@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.b9380c98.css",
+    "main.css": "./static/css/main.546f87ec.css",
     "main.js": "./static/js/main.2500fccb.js",
     "static/js/453.298f5782.chunk.js": "./static/js/453.298f5782.chunk.js",
     "static/media/project-interact_with_iot_video_1.mp4": "./static/media/project-interact_with_iot_video_1.18f028140439cc328c17.mp4",
     "static/media/header-img.jpg": "./static/media/header-img.39bc35cfa809d2844a46.jpg",
     "static/media/project-furifist_video_1.mp4": "./static/media/project-furifist_video_1.cc3bc62cd228d11bd029.mp4",
+    "static/media/GlowSansSC-Compressed-Light.otf": "./static/media/GlowSansSC-Compressed-Light.ca5320f9d8365c2782f5.otf",
     "static/media/GlowSansSC-Compressed-Regular.otf": "./static/media/GlowSansSC-Compressed-Regular.95f4aae7f06030593105.otf",
     "static/media/project-fluid_simulation_video_2.mp4": "./static/media/project-fluid_simulation_video_2.ae6ff1e47832bfbc16e2.mp4",
     "static/media/project-basketbot_video_1.mp4": "./static/media/project-basketbot_video_1.cca7c262262f46785f77.mp4",
@@ -72,12 +73,12 @@
     "static/media/arrow2.svg": "./static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "./static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "static/media/nav-icon2.svg": "./static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.b9380c98.css.map": "./static/css/main.b9380c98.css.map",
+    "main.546f87ec.css.map": "./static/css/main.546f87ec.css.map",
     "main.2500fccb.js.map": "./static/js/main.2500fccb.js.map",
     "453.298f5782.chunk.js.map": "./static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9380c98.css",
+    "static/css/main.546f87ec.css",
     "static/js/main.2500fccb.js"
   ]
 }

@@ -188,10 +188,18 @@ input:focus, textarea:focus, select:focus {
     outline: none;
 }
 
-@media (min-width: 1700pt) {
+@media (min-width: var(--container_width)) {
     main .container {
         max-width: 100%;
         padding: 0 100pt;
+    }
+}
+
+@media (max-width: 500pt) { /* 当页面宽度小于 500pt 时 */
+    .banner .icon-div {
+        flex-direction: column;
+        width: 50% !important;
+        margin-left: auto !important;
     }
 }
 
@@ -254,7 +262,7 @@ nav.navbar.scrolled {
     height: 35pt !important;;
     position: fixed;
     z-index: 9999;
-    left: calc(min(90vw, (50vw + var(--container_width) / 2) * 0.985)) !important; /*vw表示1%页面宽度*/
+    left: calc(min(85vw, (50vw + var(--container_width) / 2) * 0.985)) !important; /*vw表示1%页面宽度*/
     top: 90% !important;
     transition: 0.3s ease-in-out;
     display: flex;
@@ -543,7 +551,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .icon {
-    width: 20%;
+    /*width: 20%;*/
     height: auto;
     margin-top: 5pt;
     cursor: pointer;
@@ -725,7 +733,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-box {
     width: 100%;
-    height: 220pt;
+    height: 100%;
+    padding-top: 15pt;
+    padding-bottom: 15pt;
     border: 1.5pt solid #DDDDDD; /* 添加外框 */
     /*box-sizing: border-box; !* 确保 border 不会增加总宽度 *!*/
     margin-bottom: 20pt;

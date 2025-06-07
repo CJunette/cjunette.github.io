@@ -2,6 +2,7 @@ import {Container, Row, Col, Tab, Nav} from "react-bootstrap";
 import {useEffect, useState} from "react";
 import {readProjectData} from "./readProjectData";
 import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export const ProjectCard = ({project_index, suffix}) => {
     const projects = readProjectData(suffix);
@@ -24,15 +25,15 @@ export const ProjectCard = ({project_index, suffix}) => {
                 <Row key={project.title} className="proj-box-container">
                     {project.cover !== "" && (
                         <Col xs={4} md={4} xl={4}>
-                            <a href={`/${suffix}/${project.key}`}>
+                            <Link to={`/${suffix}/${project.key}`}>
                                 <img
                                     src={project.cover.endsWith('.gif') ? require(`../assets/img/${project.cover.split('.gif')[0]}.gif`) : require(`../assets/img/${project.cover}`)}
                                     alt={`${project.title} image`}
                                 /> {/* 这里的路径编写有点奇怪，最好不要做修改 */}
-                            </a>
+                            </Link>
                         </Col>)}
                     <Col {...colRightSizes}>
-                        <a href={`/${suffix}/${project.key}`}>
+                        <Link to={`/${suffix}/${project.key}`}>
                             <div>
                                 <h3>{project.title}</h3>
                                 <h4>{project.duration}</h4>
@@ -47,7 +48,7 @@ export const ProjectCard = ({project_index, suffix}) => {
                                 })}
                                 <h4><br/></h4>
                             </div>
-                        </a>
+                        </Link>
 
                         {project.publication.link && project.publication.link.trim() !== "" ? (
                             <a href={project.publication.link} target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()} id="publication">

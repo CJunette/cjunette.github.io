@@ -27,7 +27,7 @@ You may also see any lint errors in the console.
     "deploy": "gh-pages -d build -r https://github.com/CJunette/cjunette.github.io.git -b gh-pages"
 
 ### yarn add gh-pages -D
-You need to update the node.js if necessary.
+use this to add the dependency to the project. You need to update the node.js if necessary.
 
 ### yarn deploy
 use this to deploy the code to github.

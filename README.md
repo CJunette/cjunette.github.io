@@ -32,9 +32,9 @@ You may also see any lint errors in the console.
 
 ---
 
-for deploying to github pages (or updating content on github pages):
+## For deploying to github pages (or updating content on github pages):
 
-### use this to deploy the code to github.
+### Use the following code to deploy the code to github.
 
 `yarn deploy`
 

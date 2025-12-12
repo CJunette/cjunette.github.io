@@ -26,19 +26,20 @@ You may also see any lint errors in the console.
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -r https://github.com/CJunette/cjunette.github.io.git -b gh-pages"
 
-
-### use the following to add the dependency to the project. You need to update the node.js if necessary.
-`yarn add gh-pages -D`
-
 ---
 
 ## For deploying to github pages (or updating content on github pages):
 
-### Use the following code to deploy the code to github.
+### Use the following to add the dependency to the project. You need to update the node.js if necessary. (This is only necessary at first time or when you add new files.)
+
+`yarn add gh-pages -D`
+
+### Use the following code to deploy the code to github. 
 
 `yarn deploy`
 
 ### Click github page - setting - pages, launch the site using the branch "gh-pages".
+
 ### If you use custom domain of github, you need to update it every time you deploy.
 
 ---

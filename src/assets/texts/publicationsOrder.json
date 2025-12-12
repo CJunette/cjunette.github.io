@@ -1,7 +1,8 @@
 {
   "understanding_overreliance": 1,
-  "cometic": 2,
-  "calibread": 3,
-  "3d_ring": 4,
-  "thermotion": 5
+  "keepout": 2,
+  "cometic": 3,
+  "calibread": 4,
+  "3d_ring": 5,
+  "thermotion": 6
 }

@@ -1,0 +1,23 @@
+{
+  "title": "KeepOut: Healthy Posture as Embodied Nudge for Reducing Smartphone Overuse",
+  "duration": "June 2025 ‑ December 2025",
+  "author_list": [
+    {"Chang Liu": "#1D67CD"},
+    {"Qinhuan Lan": "#000000"},
+    {"Yu Mei": "#000000"},
+    {"Yingtian Shi":  "#000000"},
+    {"Qinwei Li":  "#000000"},
+    {"Xiaoying Peng":  "#000000"},
+    {"Jie Cai": "#000000"},
+    {"Chun Yu*": "#000000"},
+    {"Yuanchun Shi": "#000000"},
+    {"Xuhai 'Orson' Xu": "#000000"}
+  ],
+  "full_text": [
+    {"paragraph": "Excessive smartphone use is often accompanied by poor posture, which can further reinforce overuse. Embodied cognition theory emphasizes that bodily states actively shape user behaviors, making posture a promising factor in addressing overuse. However, most existing interventions rely solely on digital feedback without engaging the body. We present KeepOut, an embodied intervention that maps users’ postures to screen luminance. By dimming the screen at unhealthy postures, it encourages healthier postures, which in turn support more self-regulated smartphone use. We first conducted a formative study to explore its design space, then evaluated KeepOut in a 4-week field study (N=38), comparing it with a common periodic notification-based method. Results showed that KeepOut significantly reduced both the usage time (-17.00%, p<0.001) and launch frequency (-26.00%, p<0.001) of the target app compared with the no-intervention condition, and significantly reduced usage time (-14.43%, p<0.01) compared to baseline. Drawing on interviews and daily reports, we inspect the reason for KeepOut 's effectiveness, as well as its influence on phone-use behaviors, posture, and broader daily well-being. Our work contributes a new paradigm for smartphone interventions with embodied nudges.\n\n"},
+    {"image": "project-keepout_image_1.png", "description": "When users adopt a slouched posture (Left), they are more prone to smartphone overuse, often accompanied by physical strain and mental fatigue, yet still find it hard to stop. KeepOut helps users adopt a healthier upright posture (Right), which in turn makes it easier for them to put down the smartphone in a more self-regulated way and re-engage in real-world activities.\n\n"}
+  ],
+    "publication": {"description": "IMWUT 2026", "link": ""},
+  "cover": "project-keepout_cover.png"
+}
+

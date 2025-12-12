@@ -17,7 +17,7 @@
     {"image": "project-cometic_image_2.png", "description": "Image 2: Structure of COMETIC Models. We use Model 1 to convert Video and Video.info into gaze positions. We use Model 2 to select cursor positions as proxies for the ground truth of gaze position, and use the video-proxy pairs to fine-tune Model 1 for better eye tracking performance.\n\n"},
     {"iframe": "https://www.youtube.com/embed/6kr93ZJNsv4?si=nlUj9XrUuwPg5_GH", "description": "Video of COMETIC (CHI 2025)"}
   ],
-    "publication": {"description": "CHI 2025", "link": ""},
+    "publication": {"description": "CHI 2025", "link": "https://dl.acm.org/doi/full/10.1145/3706598.3713936"},
   "cover": "project-cometic_cover.png"
 }
 

@@ -49,4 +49,5 @@ You may also see any lint errors in the console.
 1. For any project you want to put in the website, considering putting the text in "scr/assets/texts/projects" or "scr/assets/texts/publication" (there is no difference between this two types. By default, publication is before projects).
 2. For relevant images, put them in "src/asset/img"
 3. After adding the text and images, you need to update "projectsOrder.json" or "publicationsOrder.json" to define the order of each project.
-4. Finally, use "yarn deploy" to update the website.
+4. Update links for icons in "scr/texts/links/links.json". The right most icon "i" can be changed in "src/components/Banner.js".
+5. Finally, use command above to update the website.
